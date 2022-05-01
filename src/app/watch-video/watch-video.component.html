@@ -1,0 +1,67 @@
+<!-- 
+    sizing fa-icon:
+        xs
+        lg
+        8x
+        7x
+        6x
+        5x
+        4x
+        3x
+        2x
+        1x
+ -->
+<fa-icon class="back" routerLink="" [icon]="faArrowLeft" size="3x"></fa-icon>
+<main
+  class="container"
+  (mouseover)="toggleControls('show')"
+  (mouseout)="toggleControls('hide')"
+>
+  <video [src]="videoSrc"></video>
+  <div class="container__controls" [style]="opacity">
+    <div class="controls__play">
+      <fa-icon class="play__button" [icon]="faPlay" size="5x"></fa-icon>
+      <div class="play__background"></div>
+    </div>
+    <div class="controls__progress">
+      <div class="progress__track"></div>
+      <div class="progress__bar"></div>
+    </div>
+    <div class="controls__bar">
+      <div class="bar__left">
+        <fa-icon class="left__play" [icon]="faPlay" size="2x"></fa-icon>
+        <fa-icon class="left__backward" [icon]="faBackward" size="2x"></fa-icon>
+        <fa-icon class="left__forward" [icon]="faForward" size="2x"></fa-icon>
+        <fa-icon class="left__volume" [icon]="faVolumeHigh" size="2x"></fa-icon>
+        <i class="left__timer"></i>
+      </div>
+      <div class="bar__right">
+        <fa-icon class="right__expand" [icon]="faExpand" size="2x"></fa-icon>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- <main class="container">
+  <video preload="metadata" src="/assets/untitled.wmv"></video>
+  <div class="controls">
+    <div class="progress">
+      <div class="progress__track"></div>
+      <div class="progress__thumb"></div>
+    </div>
+    <i class="fa-solid fa-play"></i>
+    <i class="fa-solid fa-backward"></i>
+    <i class="fa-solid fa-forward"></i>
+    <i class="fa-solid fa-volume"></i>
+    <p class="time"></p>
+    <i class="fa-solid fa-expand"></i>
+  </div>
+</main> -->
+
+<!-- 
+    onclick="play()"
+    onclick="back()"
+    onclick="forward()"
+    onclick="mute()"
+    onclick="fullScreen()"
+ -->
